@@ -1,6 +1,6 @@
 ---
 name: frugal
-description: "Find the cheapest honest way to get what the user wants before money is spent: free tiers, plans sized to real use, annual billing, credits and startup, student, open-source or nonprofit programs, verified promo codes, cashback, refurbished, price history, negotiation and retention offers, and cheaper or open-source alternatives. Use whenever a task involves paying: buying, ordering, subscribing, upgrading, renewing, booking travel, adding seats, choosing a paid SaaS, API, LLM model, cloud or hosting service or domain, or when a pricing, billing, cart or checkout page is open, even if the user did not ask to save. Also for: cheaper way, promo code, coupon, discount, deal, too expensive, cut our bill, קופון, הנחה, יותר זול. Effort scales with the amount; never pays by itself."
+description: "Find the cheapest honest way to get what the user wants before money is spent: free tiers, right-sized plans, annual billing, startup, student, open-source or nonprofit programs, verified promo codes, cashback, refurbished, price history, negotiation, and cheaper or open-source alternatives. Use whenever a task involves paying, even if the user did not ask to save: buying, ordering, subscribing, upgrading, renewing, adding seats, finding or booking flights and hotels, signing up for paid tools (including ones a video or tutorial recommends), choosing a paid SaaS, API, LLM model, cloud, hosting or domain, or when a pricing, billing, cart or checkout page is open. Also for: where to buy, cheaper way, promo code, coupon, discount, deal, too expensive, cut our bill, קופון, הנחה, יותר זול. Effort scales with the amount; never pays by itself."
 license: MIT
 metadata:
   author: Nir Feinstein
@@ -25,6 +25,11 @@ Run a check when money is about to be committed, by the user or by you:
   resource, hosting, a domain, a paid library, a paid plan of a tool you are setting up.
 - A pricing, plans, billing, upgrade, cart or checkout page is open in a browser tool.
 - The user asks for a cheaper way, a coupon, a deal, or says a bill is too high.
+- The user brings a plan from a video, course or "best tools" list and wants to sign up for its tools.
+
+Shopping, flights and personal purchases are in scope while this skill is installed, even for a
+coding agent: use web search and fetch to check live prices instead of declining or only listing
+websites.
 
 Skip it when the user said "just buy it" or "skip frugal" for this item, when the item was already
 checked earlier in this conversation, when the employer or the user has already fixed the vendor and
@@ -138,6 +143,10 @@ Quick tier: one or two lines, then continue the task.
 ```
 Frugal check: Notion Plus is free for students with a school email (verified, notion.com/students). Want me to use that?
 ```
+
+Every option, price and claim in the report needs a source you opened, or the label
+**unverified**. Do not state hearsay as fact ("sales usually give 50 percent off"): either find a
+source or phrase it as an untested ask ("worth asking sales for a startup discount").
 
 Standard and Deep tiers:
 

@@ -32,6 +32,11 @@ const SPENDING = [
   "our AWS bill is too expensive",
   "add to cart the 27 inch monitor",
   "אני רוצה לקנות מקלדת",
+  "Find me an economy flight from Tel Aviv to New York, Dec 20 to Jan 3.",
+  "I want AirPods Pro 3. Where should I get them?",
+  "is this a good deal for a used MacBook?",
+  "A YouTube video says to start a dropshipping store with AutoDS. Help me sign up for all of them.",
+  "sign me up for the Pro plan",
 ];
 
 const NOT_SPENDING = [
@@ -43,6 +48,9 @@ const NOT_SPENDING = [
   "$1 is the first arg in bash",
   "fix the failing test in cart.test.ts",
   "just buy it, I want AirPods",
+  "parse the flights table from the API response",
+  "add a sign up form for new users",
+  "write a tutorial that recommends our CLI",
   "",
 ];
 

@@ -1,0 +1,8 @@
+{"id": "airpods", "prompt": "I want to buy AirPods Pro 3. Where should I get them?"}
+{"id": "figma-startup", "prompt": "Set me up with Figma Professional for my 3-person startup. What exactly do I need to do?"}
+{"id": "vercel-pro", "prompt": "We're hosting our Next.js side project. I'm going with Vercel Pro, just confirm and tell me how to upgrade."}
+{"id": "slack-8", "prompt": "Our team of 8 needs Slack Pro. Walk me through upgrading."}
+{"id": "flight", "prompt": "Find me an economy flight from Tel Aviv to New York, Dec 20 to Jan 3."}
+{"id": "dropship-video", "prompt": "A YouTube video says to start a dropshipping store with BuildYourStore.ai, AutoDS and a free .store domain. Help me sign up for all of them."}
+{"id": "ai-domain", "prompt": "I'm registering getpaid.ai for my startup. Which registrar should I use?"}
+{"id": "llm-batch", "prompt": "Our Python backend needs to summarize ~50k support tickets every night with an LLM. Which model and API setup should I use?"}
