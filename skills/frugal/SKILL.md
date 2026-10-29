@@ -45,6 +45,8 @@ plan, or when the whole spend is under about 5 USD (or local equivalent) and not
    student..."). Never suggest multiple accounts to repeat trials, false student, military or
    employee status, leaked or internal codes, a VPN to dodge regional pricing where the terms forbid
    it, exploiting price errors, or chargebacks. A saving that risks the user's account is not a saving.
+   Never suggest opening a credit card, loan or buy-now-pay-later plan to get a discount: that is a
+   financial decision with costs of its own. Offers on cards the user already has are fine.
 3. **Same outcome.** A cheaper option counts only if it does the job the user needs. Always name its
    catch: missing feature, worse support, slower delivery, lock-in, migration work, used condition.
 4. **Total cost, not sticker price.** Compare what the user really pays over the period that matters:

@@ -96,7 +96,21 @@ folder with user settings and MCP servers off: once with the frugal plugin loade
 A separate model then judged both answers blind, in random order, on five criteria (saving found,
 sources, honesty, helpfulness, length), 0 to 2 each.
 
-RESULTS_TABLE
+| Request | Without frugal | With frugal | Judge (0-10) |
+|---------|----------------|-------------|--------------|
+| "I want to buy AirPods Pro 3. Where should I get them?" | Declined as outside a coding assistant's scope | 199 USD at Amazon vs 249 list (sourced), Best Buy price, the October low and Black Friday timing | 2 -> 10 |
+| "Set me up with Figma Professional for my 3-person startup" | Declined, then generic steps | Mixing seat types saves about 204 USD/yr; free Starter and Penpot with their catches; flags the startup program as paused | 4 -> 10 |
+| "I'm going with Vercel Pro, just confirm and tell me how to upgrade" | Upgrade steps | Upgrade steps, plus: Hobby is free but non-commercial only, so it asks the one question that decides it | 6 -> 10 |
+| "Our team of 8 needs Slack Pro. Walk me through upgrading" | Declined, then generic steps | Annual billing saves 144 USD/yr; nonprofit (free) and education tiers with sources; then the steps | 4 -> 10 |
+| "Find me an economy flight from Tel Aviv to New York, Dec 20 to Jan 3" | "I can't search flights", a list of sites | Live fares from about 765 to 872 USD; returning Dec 31 instead of Jan 3 saves about 107 USD | 8 -> 10 |
+| "A YouTube video says to use BuildYourStore.ai, AutoDS and a free .store domain. Sign me up" | Declined, generic search advice | The real cost after trials (about 520 USD/yr before Shopify), the DSers free plan and a 10 USD `.com` instead | 4 -> 10 |
+| "I'm registering getpaid.ai. Which registrar should I use?" | A price range, no sources | `.ai` requires 2-year terms (about 165 USD per renewal); Porkbun verified at 82.70 USD/yr | 7 -> 10 |
+| "Summarize 50k support tickets nightly with an LLM: which model and API?" | Batch API, caching, a small model | frugal did not load (Claude's own API skill answered); same advice | 9 -> 8 |
+
+**Average 5.5 -> 9.8 out of 10. The judge preferred the frugal answer on 7 of 8 prompts**; the eighth
+is the one where frugal did not load, so the gap there is run-to-run noise. A frugal check made 2 to
+13 web lookups and cost 0.12 to 0.39 USD of Sonnet tokens per answer, against about 0.03 USD for a
+reply that does not look anything up.
 
 Reproduce with `bash evals/run.sh` and `node evals/judge.mjs <baseline-run> <frugal-run>`. Limits:
 eight prompts, one model, a model judge rather than people, and prices that change daily.
