@@ -9,8 +9,10 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/fainir/frugal/stargazers"><img src="https://img.shields.io/github/stars/fainir/frugal?style=flat&color=10b981" alt="GitHub stars"></a>
   <a href="https://github.com/fainir/frugal/actions/workflows/ci.yml"><img src="https://github.com/fainir/frugal/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license"></a>
+  <a href="https://agentskills.io"><img src="https://img.shields.io/badge/Agent%20Skill-Claude%20Code%20%C2%B7%20Codex%20%C2%B7%20Cursor%20%C2%B7%20Gemini-0f172a" alt="Agent Skill for Claude Code, Codex, Cursor and Gemini CLI"></a>
 </p>
 
 <p align="center">
@@ -31,7 +33,22 @@ result, and tells you in a few lines. Then it carries on with what you asked.
 
 You do not have to ask. That is the point: most overspending happens because nobody looked.
 
+<p align="center">
+  <img src="assets/demo.png" width="860" alt="A Claude Code session: the user asks to upgrade 8 people to Slack Pro, and frugal answers with a sourced table: nonprofit free, education about $105 a year, annual billing $696 a year instead of $840, Microsoft Teams if already paid for, then the upgrade steps.">
+</p>
+
+```bash
+# Claude Code
+/plugin marketplace add fainir/frugal
+/plugin install frugal@frugal
+
+# Codex, Cursor, Gemini CLI, Copilot, OpenCode and Claude Code, in one go
+curl -fsSL https://raw.githubusercontent.com/fainir/frugal/main/install.sh | bash -s -- --all
+```
+
 ## The problem
+
+Ask a coding agent to upgrade your team and it does exactly that:
 
 ```
 > Our team of 8 needs Slack Pro. Walk me through upgrading.
@@ -43,23 +60,9 @@ You do not have to ask. That is the point: most overspending happens because nob
 
 Correct, and it just cost you an extra 144 USD a year, because monthly billing is the default and
 nobody mentioned annual, or asked whether you are a nonprofit (Pro is free), a school (85 percent
-off) or a startup. With frugal installed, the same request comes back like this (a real run, trimmed):
-
-```
-Frugal check - Slack Pro, 8 seats, baseline $840/yr (monthly) -> $696/yr (annual)
-
-| # | Option            | You pay/yr | Catch                                   | Source            |
-|---|-------------------|------------|-----------------------------------------|-------------------|
-| 1 | Nonprofit         | $0         | Registered charity only                 | slack.com, verified |
-| 2 | Education         | ~$105      | Accredited institution only             | slack.com, verified |
-| 3 | Annual billing    | $696       | 1-year commitment                       | slack.com/pricing, verified |
-| 4 | Microsoft Teams   | $0         | Only if you already pay for Microsoft 365 |                 |
-
-Best pick: annual billing at $696/yr, a 17% saving with no hoops.
-Needs you: are you a nonprofit, a school or a startup? That decides which tier you can claim.
-
-How to upgrade (annual): Settings & administration > Billing > Upgrade to Pro > Annual ...
-```
+off) or a startup. The screenshot above is the same request with frugal installed: a real run,
+trimmed. Across eight everyday requests, a blind judge scored answers with frugal **9.8 out of 10**
+against **5.5** without it ([Measured](#measured)).
 
 ## What it does
 
@@ -192,6 +195,15 @@ Israel specifics; the agent searches the user's region live.
 
 **I already know what I want.** Say "just buy it" or "skip frugal" and it stays out of the way for
 that item.
+
+## More open source for coding agents
+
+- [agent-harness](https://github.com/fainir/agent-harness) - skills, rules and hooks that make Claude Code or Codex act as a product team, a CEO or a portfolio manager.
+- [flipback](https://github.com/fainir/flipback) - an automatic `/goal` for every turn: sends the agent back when it stops before the work is done.
+- [recall](https://github.com/fainir/recall) - your Claude Code memory in every agent, over MCP.
+- [most-capable-agent-system-prompt](https://github.com/fainir/most-capable-agent-system-prompt) - the copy-paste prompt for building a self-improving agent system.
+
+If frugal saved you money, a star helps other people find it.
 
 ## License
 
