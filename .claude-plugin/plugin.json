@@ -1,0 +1,21 @@
+{
+  "name": "frugal",
+  "version": "1.0.0",
+  "description": "Never pay full price by accident. Before anything is bought, subscribed to, upgraded or booked, your agent checks for free tiers, right-sized plans, credits and programs, verified promo codes, cashback and cheaper alternatives, sized to the amount at stake.",
+  "author": {
+    "name": "Nir Feinstein",
+    "url": "https://github.com/fainir"
+  },
+  "homepage": "https://github.com/fainir/frugal",
+  "repository": "https://github.com/fainir/frugal",
+  "license": "MIT",
+  "keywords": [
+    "skill",
+    "hook",
+    "discounts",
+    "promo-codes",
+    "cost-saving",
+    "shopping",
+    "finops"
+  ]
+}

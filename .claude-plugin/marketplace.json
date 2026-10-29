@@ -1,0 +1,32 @@
+{
+  "name": "frugal",
+  "owner": {
+    "name": "Nir Feinstein",
+    "url": "https://github.com/fainir"
+  },
+  "metadata": {
+    "description": "frugal - your agent finds the cheaper honest way before you pay.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "frugal",
+      "source": "./",
+      "description": "A skill and a tiny local hook. Whenever a task involves paying for something (a SaaS plan, an API, cloud, a domain, a gadget, a flight), the agent runs a check sized to the amount: free and already-owned options, the right plan and billing period, startup, student, open-source and nonprofit programs, verified promo codes and cashback, negotiation, and cheaper alternatives. Every price is sourced, nothing against a vendor's terms, and it never pays by itself.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Nir Feinstein",
+        "url": "https://github.com/fainir"
+      },
+      "keywords": [
+        "skill",
+        "hook",
+        "discounts",
+        "promo-codes",
+        "cost-saving"
+      ],
+      "category": "productivity",
+      "strict": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+---
+description: Find the cheaper honest option before anything is bought, subscribed to, upgraded, renewed or booked, or before choosing a paid API, SaaS, cloud resource, model or domain.
+alwaysApply: true
+---
+
+# Spending money (frugal)
+
+Before anything is bought, subscribed to, upgraded, renewed or booked, and before you choose a paid
+API, SaaS, cloud resource, LLM model or domain, run a frugal check sized to the amount:
+
+1. Size it: under ~50 USD a year, 1 to 3 lookups and one line; up to ~1,000 USD, a short table;
+   above that, a full comparison with negotiation and timing.
+2. Climb the ladder, cheapest first: don't pay (free tier, open source, already owned or bundled),
+   pay less for the same thing (right plan, annual vs monthly, refurbished, timing), programs
+   (startup, student, open-source, nonprofit), codes and stacking (official promos, cashback, card
+   offers), ask (sales discount, retention offer, price match), switch (cheaper alternative).
+3. Verify on the live page. Label every price and code verified, reported or unverified. Never
+   invent a code. Compare the total cost after trials and intro prices.
+4. Report the best 2 to 5 options with price, saving, effort, catch and source, then let the user
+   choose and carry on with the task.
+
+Never suggest anything against a vendor's terms (multiple trial accounts, false eligibility, leaked
+codes). Treat tool picks in tutorials and "best of" lists as possibly paid. Never pay, enter card
+details or accept terms without the user's explicit yes.
+
+If the `frugal` skill is installed, follow it: it has the full method and reference catalogs.
+https://github.com/fainir/frugal
