@@ -75,8 +75,14 @@ Work out the annual cost: one-time price, or monthly price x 12 x seats or units
 | Standard | ~50 to 1,000 USD | 5 to 15 lookups | a short table, 2 to 5 options |
 | Deep | over ~1,000 USD, a contract, team-wide or multi-year | 15+ lookups, parallel subagents if you have them | table plus negotiation plan and timing |
 
+The budget is a cap, not a target. Count your searches and page fetches; when you reach the cap,
+stop and report what you have, naming what you did not check. No subagents below the Deep tier.
+
+For an open-ended "what should I get?" question, first pick two or three candidate products from one
+or two trusted review sources, then price-check only those. Do not survey the whole market.
+
 Use the user's currency and region. When the spend is a side effect of a coding task, keep the
-check short or run it in a subagent, and do not derail the main task.
+check short and do not derail the main task.
 
 ## Step 1: Pin down the need (no lookups yet)
 
