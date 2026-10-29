@@ -140,6 +140,8 @@ or from a clone: `bash install.sh --all`. Flags: `--hook` and `--rule` pick extr
 
 **With the skills CLI:** `npx skills add fainir/frugal`
 
+**Gemini CLI:** `gemini extensions install https://github.com/fainir/frugal`
+
 **By hand:** copy `skills/frugal` to `~/.agents/skills/frugal` (Codex, Cursor, Gemini CLI,
 Copilot, OpenCode, Amp) and link it from `~/.claude/skills/frugal` (Claude Code). For Cursor rules,
 copy [rules/cursor/frugal.mdc](rules/cursor/frugal.mdc) into `.cursor/rules/`. Other agents:
