@@ -160,6 +160,7 @@ for 6 people"*.
 | Savings log | One line per saving you accept; ask "what has frugal saved me?" | `~/.config/frugal/savings.md` |
 
 Turn the hook off for a session with `FRUGAL_HOOK=off`, or say "skip frugal" / "just buy it".
+Nothing leaves your machine except what your agent already fetches: see [PRIVACY.md](PRIVACY.md).
 
 ## The rules it keeps
 
