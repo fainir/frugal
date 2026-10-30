@@ -4,7 +4,7 @@ description: "Find the cheapest honest way to get what the user wants before mon
 license: MIT
 metadata:
   author: Nir Feinstein
-  version: "1.0.0"
+  version: "1.0.1"
   homepage: https://github.com/fainir/frugal
 ---
 
