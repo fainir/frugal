@@ -53,10 +53,19 @@ curl -fsSL https://raw.githubusercontent.com/fainir/frugal/main/install.sh | bas
 You can try this without installing frugal. Suppose you need Cloudflare R2 for one month. Paste the prompt into your agent or use a calculator and the [R2 pricing table](https://developers.cloudflare.com/r2/pricing/#r2-pricing). One GB-month is one GB stored for a month. Uploads are an example of Class A requests. Download requests are Class B. Infrequent Access also bills for the volume retrieved.
 
 ```text
-Compare R2 Standard and Infrequent Access for 8 GB-month stored, 1 million
-Class A operations, 1 million Class B operations, and 8 GB read in a 30-day
-month. Assume the account's full Standard free allowance is available.
-Use Cloudflare's pricing page and show each monthly charge in USD.
+Compare Cloudflare R2
+Standard and Infrequent
+Access for a 30-day month.
+
+8 GB-month stored
+1M Class A requests
+1M Class B requests
+8 GB retrieved
+
+Assume the full Standard
+free tier is available.
+Use the official rates.
+List the charges in USD.
 ```
 
 With those assumptions, Standard is **$0**. The Infrequent Access tier has no free allowance, so the same month is **$10.06 before tax**, including $0.08 for storage, $9.00 for Class A operations, $0.90 for Class B operations and $0.08 for retrieval. That makes Standard the lower-cost choice for this example. Infrequent Access has a 30-day minimum charge per object. Check your account's available allowance and expected usage for your own decision. [Cloudflare R2 pricing, checked November 13, 2026](https://developers.cloudflare.com/r2/pricing/).
